@@ -4,4 +4,5 @@ export type Product = {
     image?: string;
     price?: string;
     description?: string;
+    isBestSeller?: boolean;
   };

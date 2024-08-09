@@ -6,19 +6,35 @@ const { Meta } = Card;
 const { Text, Title } = Typography;
 
 type Prop = {
-  product:Product
+  product: Product;
   onClick?: () => void;
+  imageWidth?: number;
+  isBestSeller?: boolean;
 };
 
-export default function ProductItem({ product, onClick }: Prop) {
+export default function ProductItem({ product, onClick, imageWidth, isBestSeller }: Prop) {
   return (
     <Card
       hoverable
       cover={
-        <div style={{ display: "flex", justifyContent: "center" }}>
+        <div style={{ display: "flex", justifyContent: "center", position: "relative" }}>
+          {isBestSeller && (
+            <img
+              src="/bestSeller.png"
+              alt="Best Seller"
+              style={{ 
+                position: "absolute", 
+                top: -20, 
+                right: -20, 
+                width: 100, 
+                height: 100, 
+                zIndex: 1 
+              }}
+            />
+          )}
           <Image
             className="m-2"
-            height={200}
+            width={imageWidth ?? 180}
             alt={product.name}
             src={product.image}
             fallback="https://via.placeholder.com/150"

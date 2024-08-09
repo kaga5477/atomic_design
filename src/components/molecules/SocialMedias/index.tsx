@@ -1,4 +1,4 @@
-import { FacebookOutlined, InstagramOutlined, TwitterOutlined } from "@/components/atoms/Icons";
+import { FacebookOutlined, InstagramOutlined, TwitterOutlined } from "@/components/atoms/Icons";  
 
 export default function SocialMedias() {
   return (

@@ -1,7 +1,7 @@
 import {
   Button,
   LogoutOutlined,
-  SettingOutlined,
+  ShoppingCartOutlined,
   UserOutlined,
 } from "@/components/atoms";
 
@@ -11,8 +11,8 @@ export default function UserMenu() {
       <Button type="text" icon={<UserOutlined />} className="mr-2">
         Profile
       </Button>
-      <Button type="text" icon={<SettingOutlined />} className="mr-2">
-        Settings
+      <Button type="text" icon={<ShoppingCartOutlined />} className="mr-2">
+        My Cart
       </Button>
       <Button type="text" icon={<LogoutOutlined />}>
         Logout
