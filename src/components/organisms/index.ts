@@ -1,5 +1,3 @@
-export * from './NotificationItem'
-export * from './ProductItem'
-export * from './ProfileCard'
 export * from './Header'
 export * from './Footer'
+export * from './ProductsGrid'

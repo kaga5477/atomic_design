@@ -12,6 +12,7 @@ type Prop = {
   maxLength?: number;
   disable?: boolean;
   value?: string;
+  width?: number;
   handleSearch?: () => void;
   onChange?: () => void;
 };
@@ -29,10 +30,12 @@ export default function SearchBox({
   maxLength,
   disable,
   value,
-  onChange
+  onChange,
+  width
 }: Prop) {
   return (
     <Search
+      width={width}
       placeholder={placeholder}
       enterButton={enterButton ?? "Search"}
       onSearch={handleSearch}
