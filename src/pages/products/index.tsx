@@ -12,11 +12,11 @@ const sampleProducts: Product[] = [
   },
   {
     id: "2",
-    name: "Product 2",
-    price: "$20",
+    name: "Asus Expertbook i5-1235U 1.3Ghz for devs" ,
+    price: "$500",
     image:
-      "https://www.lego.com/cdn/cs/set/assets/blta1c5c1a209cb4eaf/76919_alt1.jpg?fit=crop&quality=80&width=600&height=600&dpr=1",
-    description: "Description of product 2",
+      "https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/l/a/laptop-asus-expertbook-b1402cba-nk2669w-thumbnails.png",
+    description: "i5-1235U 1.3Ghz",
   },
   {
     id: "4",
@@ -42,7 +42,7 @@ const sampleProducts: Product[] = [
   },
   {
     id: "7",
-    name: "Phuoc",
+    name: "Phuoc Paul",
     price: "500k",
     image:
       "https://blueprint.cyberlogitec.com.vn/upload/PROFILE_PICTURES/phuocluong/croped_1708525688150-0,30,1250,1280-0.14-.png",
@@ -68,6 +68,6 @@ const sampleProducts: Product[] = [
 
 export default function ProductsPage() {
   return (
-    <ProductsTemplate bestSellerProduct={sampleProducts[5]} products={sampleProducts}></ProductsTemplate>
+    <ProductsTemplate bestSellerProduct={sampleProducts[1]} products={sampleProducts}></ProductsTemplate>
   );
 }

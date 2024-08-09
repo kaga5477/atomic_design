@@ -60,6 +60,7 @@ export default function Home() {
         {/* <ProductItem product={product}></ProductItem> */}
         {/* <ProductsGrid products={sampleProducts} onProductClick={handleProductClick} /> */}
         <ProfileCard user={user} />
+        <br></br>
         <NotificationItem notification={notification} />
       </div>
       <AppFooter></AppFooter>
